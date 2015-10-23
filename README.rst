@@ -33,3 +33,7 @@ Quick start
           pass
 
       admin.site.register(MyModel, MyModelAdmin)
+      
+Example
+-------
+.. image:: http://postimg.org/image/ir26jvydl/
