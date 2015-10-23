@@ -36,4 +36,4 @@ Quick start
       
 Example
 -------
-![alt tag](http://postimg.org/image/ir26jvydl/)
+![](http://postimg.org/image/ir26jvydl/)
