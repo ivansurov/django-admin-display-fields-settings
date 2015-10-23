@@ -36,4 +36,4 @@ Quick start
       
 Example
 -------
-.. image:: http://s12.postimg.org/mao49p13f/django_admin_display_fields_settings.png
+![django-admin-display-fields-settings](https://cloud.githubusercontent.com/assets/15198843/10691698/7e08ba6e-798b-11e5-96c8-f4d35be05833.png)
