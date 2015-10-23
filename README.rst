@@ -36,4 +36,4 @@ Quick start
       
 Example
 -------
-.. image:: http://postimg.org/image/ir26jvydl/
+![alt tag](http://postimg.org/image/ir26jvydl/)
