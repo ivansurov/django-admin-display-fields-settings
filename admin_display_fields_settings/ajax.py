@@ -1,5 +1,5 @@
 from django.http import HttpResponseNotFound, HttpResponseForbidden
-from django_common.http import JsonResponse
+from http import JsonResponse
 from utils import getAdminViewByUrl, deserialize_form
 from models import DisplaySettings
 from django.template.loader import render_to_string
