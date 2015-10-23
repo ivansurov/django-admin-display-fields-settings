@@ -29,7 +29,8 @@ def changeFormHandler(request):
         return JsonResponse({
             'insert_type': INSERT_TYPE,
             'selector': SELECTOR,
-            'form': render_to_string('admin/admin_display_fields_settings.html', {'form': form})
+            'form': render_to_string(
+                'admin_display_fields_settings/admin/admin_display_fields_settings.html', {'form': form})
         }, success=True)
 
     if request.POST.get('operation') == 'save_form' and request.POST.get('form'):
