@@ -1,0 +1,29 @@
+{% load i18n %}
+<div class="dropdown-menu_wrap">
+    <div class="dropdown-menu_button"><a onclick="$('.dropdown-menu').toggle(); return false;" href="#">Columns</a></div>
+    <div class="dropdown-menu">
+        <div class="module">
+            <h2>Select the fields to display</h2>
+        </div>
+        <form id="settings_display_column" method="post">
+            {% if form.errors %}
+                <p class="errornote">
+                {% if form.errors|length == 1 %}
+                    {% trans "Please correct the error below." %}
+                {% else %}
+                    {% trans "Please correct the errors below." %}
+                {% endif %}
+                </p>
+                {{ form.non_field_errors }}
+            {% endif %}
+
+            <fieldset class="module aligned">
+                {% for field in form %}
+                    {% include "admin/includes/field.html" %}
+                {% endfor %}
+            </fieldset>
+
+            <input class="default" type="submit" value="Save" name="_save" onclick="displayFieldsSettingsSave(); return false;">
+        </form>
+    </div>
+</div>

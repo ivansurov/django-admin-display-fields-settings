@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst README DESCRIPTION
+recursive-include admin_display_fields_settings/static *
+recursive-include admin_display_fields_settings/templates *
