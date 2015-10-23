@@ -10,13 +10,13 @@ class DisplayFieldsSettingsAdmin(admin.ModelAdmin):
     class Media:
         css = {
             "all": (
-                "admin/admin_display_fields_settings/css/admin_display_fields_settings.css",
+                "/admin_display_fields_settings/admin/css/admin_display_fields_settings.css",
                 "admin/css/forms.css",
             )
         }
         js = (
             "admin/js/jquery.js",
-            "admin/admin_display_fields_settings/js/admin_display_fields_settings.js",
+            "/admin_display_fields_settings/admin/js/admin_display_fields_settings.js",
         )
 
     def get_field(self, field_name):
