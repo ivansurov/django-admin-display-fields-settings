@@ -2,7 +2,7 @@
 django-admin-display-fields-settings
 =====================================
 
-Django application. The application adds in the admin form to control the views column.
+Django application. It adds a column view control form into admin area.
 
 Quick start
 -----------
