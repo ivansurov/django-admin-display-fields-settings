@@ -13,16 +13,12 @@ setup(
     description=read('DESCRIPTION'),
     license='GPL',
     keywords="django admin fields column setting"
-
     author='Ivan Surov',
     author_email='ivansurovv@gmail.com',
-
     packages=['admin_display_fields_settings'],
     include_package_data=True,
-    
     long_description=long_description=read('README'),
-    url='http://github.com/django-admin-display-fields-settings',
-
+    url='https://github.com/ivansurov/django-admin-display-fields-settings',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
