@@ -36,4 +36,4 @@ Quick start
       
 Example
 -------
-![](http://postimg.org/image/ir26jvydl/)
+.. image:: http://s12.postimg.org/mao49p13f/django_admin_display_fields_settings.png
