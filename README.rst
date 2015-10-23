@@ -36,4 +36,4 @@ Quick start
       
 Example
 -------
-.. image:: https://cloud.githubusercontent.com/assets/15198843/10691769/17d21b86-798c-11e5-9b8e-a29cfa3d7ed6.png
+.. image:: https://cloud.githubusercontent.com/assets/15198843/10693762/912bfd86-799a-11e5-8b44-2bf3c6121930.png
