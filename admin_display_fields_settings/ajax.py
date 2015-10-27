@@ -43,6 +43,8 @@ def changeFormHandler(request):
                                model=view.model.__name__, view=view.__class__.__name__)
 
             settings = json.loads(obj.settings or '{}')
+            settings['list_display_sort'] = form.cleaned_data['sort_opts'].split(',')
+            del form.cleaned_data['sort_opts']
             settings['list_display'] = form.cleaned_data
 
             obj.settings = json.dumps(settings)

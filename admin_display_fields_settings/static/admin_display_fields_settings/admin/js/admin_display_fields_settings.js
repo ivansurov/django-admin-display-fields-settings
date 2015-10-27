@@ -1,7 +1,22 @@
 function displayFieldsSettingsSave() {
 
-    var form = $('#settings_display_column').serialize(true);
-    if ( !form ) {
+    var form = $('#settings_display_column');
+
+    if ( form.find('input[type=checkbox]:checked').length == 0 ) {
+        return false;
+    }
+
+    var fields = [];
+    form.find(':input').each( function(index, elm) {
+        if ( elm.name != 'sort_opts' && elm.type != 'submit' ) {
+            fields.push(elm.name);
+        }
+    });
+    form.find('input[name=sort_opts]').val(fields.join([separator=',']));
+
+
+    var form_data = $('#settings_display_column').serialize(true);
+    if ( !form_data ) {
         return false;
     }
 
@@ -10,7 +25,7 @@ function displayFieldsSettingsSave() {
         url: "/admin_display_fields_settings/change_form/",
         data: {
             "operation": "save_form",
-            'form': form,
+            'form': form_data,
             "csrfmiddlewaretoken": getCookie('csrftoken')
         },
         success: function (response) {
@@ -60,6 +75,8 @@ function displayFieldsSettingsForm() {
                         } else {
                             change_form_insert_default(response.form);
                         }
+
+                        sortable_initial();
                     }
                     else {
                         change_form_insert_default(response.form);
@@ -97,6 +114,14 @@ function getCookie(name) {
         }
     }
     return cookieValue;
+}
+
+function sortable_initial() {
+
+    $("#settings_display_column fieldset").sortable({
+        revert: true
+    });
+    $("fieldset, div.form-row").disableSelection();
 }
 
 $( document ).ready(function() {
