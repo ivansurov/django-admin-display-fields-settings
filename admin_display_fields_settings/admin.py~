@@ -16,8 +16,8 @@ class DisplayFieldsSettingsAdmin(admin.ModelAdmin):
         }
         js = (
             "admin/js/jquery.js",
-            "admin_display_fields_settings/admin/js/jquery-ui.min.js",
             "admin_display_fields_settings/admin/js/admin_display_fields_settings.js",
+            "admin_display_fields_settings/admin/js/jquery-ui.min.js",
         )
 
     def get_field(self, field_name):
