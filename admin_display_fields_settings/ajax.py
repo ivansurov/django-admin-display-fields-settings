@@ -16,7 +16,7 @@ def changeFormHandler(request):
         return HttpResponseNotFound('<h1>Page not found</h1>')
 
     view = getAdminViewByUrl(request.META.get('HTTP_REFERER'))
-    if view is False:
+    if view is False or view is None:
         return JsonResponse({}, errors=['Not found this view'], success=False)
 
     if not view.has_change_permission(request):
