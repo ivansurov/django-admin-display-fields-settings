@@ -141,4 +141,6 @@ class DisplayFieldsSettingsAdmin(admin.ModelAdmin):
 
             response = list_display_sort + response
 
+        self.list_editable = [field for field in self.list_editable if field in response]
+
         return response
