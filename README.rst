@@ -4,6 +4,10 @@ django-admin-display-fields-settings
 
 Django application. It adds a column view control form into admin area. You can choose which fields to display and sort them in the correct order for you. Possible fields for display are taken from ``list_display``. To sort the fields just drag the field into place.
 
+Motivation
+-----------
+Any user can choose to display the column for yourself!
+
 Quick start
 -----------
 
